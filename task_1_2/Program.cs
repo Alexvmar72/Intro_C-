@@ -5,4 +5,17 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Введите число для проверки на чётность: ");
+int a = int.Parse(Console.ReadLine()!);
+
+if (a % 2 == 0)
+{
+    Console.Write(a);
+    Console.WriteLine(" - да, чётное");
+}
+
+else
+{
+    Console.Write(a);
+    Console.WriteLine(" - нет, нечётное");
+}
