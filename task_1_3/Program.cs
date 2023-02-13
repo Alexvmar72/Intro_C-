@@ -9,18 +9,21 @@ int a = int.Parse(Console.ReadLine()!);
 
 if (a > 1)
 {
-    for (int i = 2; i <= a; i = i + 2)
+    if (a >= 4)
     {
-        if (a >= 4)
+        Console.Write("2");
+        for (int i = 4; i <= a; i = i + 2)
         {
-            Console.Write(i + " ");
-        }
-        else
-        {
-            Console.WriteLine(i);
+            Console.Write(", " + i);
         }
     }
+
+    else
+    {
+        Console.WriteLine("2");
+    }
 }
+
 else
 {
     Console.WriteLine("Необходимо перезапустить программу и ввести число больше 1");
