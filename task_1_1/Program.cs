@@ -24,5 +24,5 @@ else if (max < c)
     max = c;
 }
 
-Console.Write("Максимальное из трёх чисел: ");
+Console.Write("Максимальное из всех трёх чисел: ");
 Console.WriteLine(max);
