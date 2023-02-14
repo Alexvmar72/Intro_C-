@@ -5,14 +5,14 @@
 // 8 -> 2, 4, 6, 8
 
 Console.WriteLine("Введите магическое число N");
-int a = int.Parse(Console.ReadLine()!);
+int n = int.Parse(Console.ReadLine()!);
 
-if (a > 1)
+if (n > 1)
 {
-    if (a >= 4)
+    if (n >= 4)
     {
         Console.Write("2");
-        for (int i = 4; i <= a; i = i + 2)
+        for (int i = 4; i <= n; i = i + 2)
         {
             Console.Write(", " + i);
         }
